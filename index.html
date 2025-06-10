@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ruqyah Muslimah Indonesia</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f7f9fa;
-      color: #333;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
     }
     header {
-      background-color: #5e8d87;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x900/?mosque,peace') no-repeat center center;
+      background-size: cover;
       color: white;
-      padding: 20px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
     }
     nav {
       background-color: #4d7c77;
       text-align: center;
       padding: 10px 0;
+      position: sticky;
+      top: 0;
     }
     nav a {
       color: white;
@@ -30,53 +40,66 @@
       font-weight: bold;
     }
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.1em;
-      max-width: 800px;
-      margin: 10px auto;
+      max-width: 900px;
+      margin: auto;
     }
     footer {
-      background-color: #e5e5e5;
+      background-color: #f2f2f2;
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
+    }
+    .btn {
+      background-color: #5e8d87;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Ruqyah Muslimah Indonesia</h1>
-    <p>Mengajak Muslimah kembali kepada tauhid, sembuh dengan syar'i, dan selamat dari tipu daya jin & dukun</p>
-  </header>
-
   <nav>
-    <a href="#">Beranda</a>
-    <a href="#">Tentang Kami</a>
-    <a href="#">Layanan</a>
-    <a href="#">Konsultasi</a>
-    <a href="#">Kontak</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#testimoni">Testimoni</a>
+    <a href="#kontak">Kontak</a>
   </nav>
 
-  <section>
-    <h2>Selamat datang di Website Resmi</h2>
-    <p>
-      Ruqyah Muslimah Indonesia adalah komunitas edukatif dan layanan ruqyah syar’iyyah berbasis Qur’an dan Sunnah, khusus untuk muslimah. Kami hadir untuk membantu Muslimah yang mengalami gangguan jin, sihir, trauma batin, dan kebutuhan spiritual lainnya dengan metode yang aman, ilmiah, dan menenangkan.
-    </p>
-    <p>
-      Kami menolak segala bentuk perdukunan, jimat, dan praktik syirik lainnya. Bergabunglah bersama kami untuk belajar, sembuh, dan menguatkan iman.
-    </p>
+  <header>
+    <h1>Ruqyah Muslimah Indonesia</h1>
+    <p>Membantu Muslimah sembuh dan kembali kepada tauhid</p>
+    <a href="#layanan"><button class="btn">Lihat Layanan</button></a>
+  </header>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>RMI adalah komunitas ruqyah syar'iyyah untuk muslimah. Kami hadir dengan pendekatan Qur'ani, ilmiah, dan nyaman untuk membebaskan dari gangguan jin, sihir, dan trauma batin.</p>
+  </section>
+
+  <section id="layanan">
+    <h2>Layanan Kami</h2>
+    <p>Kami menyediakan ruqyah privat, kelas self-healing, mentoring Islami, serta edukasi syar'i terkait gangguan spiritual.</p>
+  </section>
+
+  <section id="testimoni">
+    <h2>Testimoni</h2>
+    <p>"Setelah ikut X-TROM, aku merasa tenang dan lebih dekat dengan Allah. Alhamdulillah gangguan itu hilang." — Muslimah, 29 th</p>
+  </section>
+
+  <section id="kontak">
+    <h2>Hubungi Kami</h2>
+    <p>Ingin konsultasi atau ruqyah? Hubungi kami via WhatsApp:</p>
+    <a href="https://wa.me/6281234567890" class="btn">Kirim Pesan</a>
   </section>
 
   <footer>
-    &copy; 2025 Ruqyah Muslimah Indonesia. Dibangun dengan niat lillahita'ala.
+    &copy; 2025 Ruqyah Muslimah Indonesia. Dibangun dengan cinta dan tauhid.
   </footer>
 
 </body>
